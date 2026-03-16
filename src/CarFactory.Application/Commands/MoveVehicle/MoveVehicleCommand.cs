@@ -1,6 +1,8 @@
+using MediatR;
+
 namespace CarFactory.Application.Commands.MoveVehicle;
 
-public class MoveVehicleCommand
+public record MoveVehicleCommand(string VIN, string OperatorId) : IRequest<MoveVehicleResponse>
 {
     
 }

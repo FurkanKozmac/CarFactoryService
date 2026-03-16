@@ -1,6 +1,10 @@
 namespace CarFactory.Application.Commands.MoveVehicle;
 
-public class MoveVehicleResponse
-{
-    
-}
+public record MoveVehicleResponse(
+    string VIN,
+    string NewStationName,
+    string NewStatus,
+    DateTime MovedAt,
+    string ModelName,
+    string Color
+);
